@@ -1,0 +1,16 @@
+.titre, .navigation {
+  display: inline-block;
+}
+.navigation a {
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  display: inline-block;
+}
+.item3 {
+  text-transform: uppercase;
+}
+.item1, .item2,.item3,.item4 {
+  padding: 2px 20px;
+  display: inline-block;
+}

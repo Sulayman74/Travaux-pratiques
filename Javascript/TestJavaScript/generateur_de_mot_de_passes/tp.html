@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tp 1</title>
+    <link rel="stylesheet" href="tp.css">
+    
+
+    
+  </head>
+  <body>
+    <main>
+      <form class="pass_form" action="">
+        <div>
+          <input type="text" placeholder="Abc12@#*$€Zp">
+        </div>
+        <div>
+          <input type="checkbox" name="upper" id="upper">
+          <label for="upper">Uppercase</label>
+        </div>
+        <div>
+          <input type="checkbox" name="lower" id="lower">
+          <label for="lower">Lowercase</label>
+        </div>
+        <div>
+          <input type="checkbox" name="num" id="num">
+          <label for="num">Numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" name="symbol" id="symbol">
+          <label for="symbol">Symbols</label>
+        </div>
+        <div>
+          <label for="longueurpwd">Password Length:</label>
+          <input type="range" id="longueurpwd" name="longueurpwd" min="0" max="50">
+          <input type="number" id="nb_lettres">
+        </div>
+
+        <input id="boutonPass" type="submit" value="Generate password">
+      </form>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

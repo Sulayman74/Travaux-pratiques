@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Mogra";
+  src: url("Fonts/Mogra/Mogra-Regular.ttf") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap");
+
+body {
+  /* background-image: url('assets/wood-pattern.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-image: url("assets/brickWall.png");
+  height: 250vh;
+}
+
+h1 {
+  /* background-color: coral; */
+  font-family: "Mogra";
+  font-style: italic;
+  font-size: 3em;
+  padding: 5%;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  height: 1vh;
+  width: 3vw;
+  display: inline-block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(227, 61, 61, 0.7);
+}
+h1 .lettreE {
+  font-size: 0.7em;
+  position: absolute;
+  top: 100px;
+  left: 125px;
+}
+
+h1 .lettreE::after {
+  content: "";
+  height: 5px;
+  width: 12px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: 13px;
+}
+
+h1 > span {
+  padding: 0 10px;
+}
+
+h1:hover {
+  transform: scale(1.2);
+}
+
+header {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavBar,
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: 20vh;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.NavBar > :nth-child(1) {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "Mogra";
+  font-size: 1.2em;
+}
+
+.NavBar a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.NavBar li {
+  transition: all 0.3s ease-in-out;
+}
+li:hover {
+  transform: scale(1.2);
+}
+.imgCerf {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.imgCerf::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  height: 0;
+  width: 0;
+  border-top: 160px solid rgba(251, 23, 23, 0.57);
+  border-left: 160px solid transparent;
+}
+
+.Chevron {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 4em;
+  height: 30vh;
+}
+
+.fa-solid.fa-chevron-down {
+  text-decoration: none;
+  color: rgb(227, 61, 61);
+}
+
+main {
+  margin: 0 5%;
+  background-image: url("assets/wood-white-grey-line-wooden-facade-fence-texture-background-wall-horizontal-plank-gray_100800-14956.jpeg");
+  background-size: contain;
+  height: 350vh;
+}
+
+#section1 {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+}
+#section,
+.PartieG {
+  min-width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-image: radial-gradient(
+      rgba(244, 239, 244, 0.95),
+      rgba(244, 239, 244, 1)
+    ),
+    url("assets/fondFlorale.png");
+  padding: 20px;
+  text-align: center;
+}
+
+.PartieG h2 {
+  font-size: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.PartieG h2:after {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 45%;
+  transform: translateX(-60%);
+  background-color: rgb(227, 61, 61);
+  height: 5px;
+  width: 30px;
+  margin: 20px;
+}
+.PartieG h3 {
+  text-transform: uppercase;
+  color: rgb(227, 61, 61);
+}
+
+#section1 .ImgDeDroite {
+  background-image: url("assets/bgi1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 50%;
+}
+
+#section2 {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  /* background-color: coral; */
+}
+
+#section2 .ImgDeGauche {
+  background-image: url(assets/bgi3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 70%;
+}
+#section2 .PartieD2 {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 70px 10px 15px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  background-image: radial-gradient(
+      rgba(244, 239, 244, 0.95),
+      rgba(244, 239, 244, 1)
+    ),
+    url("assets/fondFlorale.png");
+}
+
+.PartieD2 h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+}
+.PartieD2 .texte2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  z-index: 3;
+}
+
+.PartieD2 h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -500%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  background-image: url("assets/des-legumes.png");
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+
+.PartieD2 h2:after {
+  content: "";
+  display: flex;
+  position: absolute;
+  left: 45%;
+  transform: translateX(-60%);
+  background-color: rgb(227, 61, 61);
+  height: 5px;
+  width: 30px;
+  margin: 20px;
+}
+
+.PartieD2 h3 {
+  text-transform: uppercase;
+  color: rgb(227, 61, 61);
+}
+
+#section3 {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  /* background-color: royalblue; */
+}
+
+.PartieG3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  /* background-color: coral; */
+  width: 50%;
+  background-image: radial-gradient(
+      rgba(244, 239, 244, 0.95),
+      rgba(244, 239, 244, 1)
+    ),
+    url("assets/fondFlorale.png");
+  padding: 10px;
+}
+
+.PartieG3 h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  position: relative;
+}
+.PartieG3 h2:before {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-image: url(assets/riz.png);
+  background-size: contain;
+  position: absolute;
+  top: -300%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#section3,
+.ImgDeDroite3 {
+  background-image: url("assets/Bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 50%;
+}
+
+.ImageDuBas {
+  background-image: url(assets/bgi4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+}
+
+h4 {
+  display: flex;
+
+  /* background-color: red; */
+}
+
+h4 span {
+  padding: 2px;
+}
+
+#Contact {
+  display: flex;
+  align-items: flex-start;
+  background-color: royalblue;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  background-image: radial-gradient(
+      rgba(244, 239, 244, 0.95),
+      rgba(244, 239, 244, 1)
+    ),
+    url("assets/fondFlorale.png");
+}
+
+.LogosSocial {
+  align-self: flex-end;
+  padding: 0 10px;
+}

@@ -1,0 +1,27 @@
+footer {
+  background-color: black;
+  max-width: 800px;
+}
+.collumn {
+  max-width: 30%;
+  vertical-align: top;
+}
+.col1,.col2,.col3 {
+
+  display: inline-block;
+  width: 150px;
+  margin : 20px 30px 15px 50px;
+
+}
+.col3 img {
+  width: 200px;
+}
+
+.col1 p, .col1 h3, .col2 h3 {
+  color: white;
+}
+
+.col2 ol {
+  list-style-type: upper-roman;
+  color: white;
+}

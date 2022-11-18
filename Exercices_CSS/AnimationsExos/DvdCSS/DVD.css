@@ -1,0 +1,164 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: darkblue;
+}
+
+p {
+  margin: 0;
+}
+
+/* ovale DVD */
+
+.LogoDVD {
+  height: 10%;
+  width: 10%;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.2em;
+  animation: bounce 4s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    background-color: #cb8741;
+    opacity: 0.3;
+  }
+
+  25% {
+    background-color: #43fbb2;
+    opacity: 0.5;
+    top: 90vh;
+    left: 50%;
+  }
+
+  50% {
+    background-color: #910a0a;
+    opacity: 0.7;
+    top: 50vh;
+    left: 90%;
+  }
+
+  75% {
+    background-color: #1982e3;
+    opacity: 0.9;
+    top: 0;
+    left: 50%;
+  }
+
+  100% {
+    background-color: #cb8741;
+    opacity: 0.3;
+  }
+}
+
+/* @-o-keyframes bounce {
+  0% {
+    background-color: #cb8741;
+    opacity: 0.3;
+    transform: translate(900%, 50vh);
+  }
+
+  25% {
+    background-color: #e3e119;
+    opacity: 0.5;
+    transform: translate(450%, 90vh);
+  }
+
+  50% {
+    background-color: #910a0a;
+    opacity: 0.7;
+    transform: translate(0%, 50vh);
+  }
+
+  75% {
+    background-color: #1982e3;
+    opacity: 0.9;
+    transform: translate(450%, 0vh);
+  }
+
+  100% {
+    background-color: #cb8741;
+    opacity: 0.3;
+    transform: translate(900%, 50vh);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    background-color: #cb8741;
+    opacity: 0.3;
+    transform: translate(900%, 50vh);
+  }
+
+  25% {
+    background-color: #e3e119;
+    opacity: 0.5;
+    transform: translate(450%, 90vh);
+  }
+
+  50% {
+    background-color: #910a0a;
+    opacity: 0.7;
+    transform: translate(0%, 50vh);
+  }
+
+  75% {
+    background-color: #1982e3;
+    opacity: 0.9;
+    transform: translate(450%, 0vh);
+  }
+
+  100% {
+    background-color: #cb8741;
+    opacity: 0.3;
+    transform: translate(900%, 50vh);
+  }
+}
+@keyframes bounce {
+  0% {
+    background-color: #cb8741;
+    opacity: 0.9;
+    transform: translate(900%, 50vh);
+  }
+
+  25% {
+    background-color: #ffbf00;
+    opacity: 0.6;
+    transform: translate(450%, 90vh);
+  }
+  40% {
+    background-color: #040300;
+    color: white;
+    opacity: 0.8;
+  }
+
+  50% {
+    background-color: #e40000;
+    opacity: 0.7;
+    transform: translate(0%, 50vh);
+  }
+
+  75% {
+    background-color: #0174de;
+    opacity: 1;
+    transform: translate(450%, 0vh);
+    color: black;
+  }
+
+  90% {
+    background-color: #285302;
+    opacity: 1;
+  }
+
+  100% {
+    background-color: #cb8741;
+    opacity: 0.4;
+    transform: translate(900%, 50vh);
+  }
+} */

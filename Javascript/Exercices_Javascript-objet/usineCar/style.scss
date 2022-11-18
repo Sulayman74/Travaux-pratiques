@@ -1,0 +1,52 @@
+
+body {
+	background: #2A2B30;
+}
+.parking {
+display: flex;
+flex-wrap: wrap;
+.voiture {
+    display: flex;
+    margin-right:10px;
+    height: 100px;
+    width: 300px;
+    position: relative;
+    align-items: flex-end;
+    .element {
+        background-color: red;
+       &:first-child{
+        width: 20%;
+        height: 50%;
+       }
+       &:nth-child(2){
+        width: 60%;
+        height: 100%;
+       }
+       &:last-child{
+        width: 20%;
+        height: 50%;
+       }
+    }
+    &:after {
+        width:40px;
+        height: 40px;
+        content:'';
+        background-color: black;;
+        position: absolute;
+        left:20%;
+        bottom:-20px;
+        border-radius: 50%;
+    }
+    &:before {
+        width:40px;
+        height: 40px;
+        content:'';
+        background-color: black;;
+        position: absolute;
+        right:20%;
+        bottom:-20px;
+        border-radius: 50%;
+    }
+}
+
+}

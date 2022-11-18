@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rectangle {
+  background-color: green;
+  height:50px;
+  width: 100px;
+  border: yellow solid 1px;
+}
+.carre {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border: yellow solid 1px;
+}
+.rond {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: yellow solid 1px;
+}

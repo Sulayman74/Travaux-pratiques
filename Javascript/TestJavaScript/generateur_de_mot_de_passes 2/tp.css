@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    width:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ADAF3;
+}
+.pass_form {
+    background-color: #E5F8F4;
+    max-width:200px;
+    padding:25px;
+    border-radius: 15px;
+}
+
+
+.pass_form > div {
+margin-bottom: 10px;
+}
+#nb_lettres {
+    width:30px;
+}
+

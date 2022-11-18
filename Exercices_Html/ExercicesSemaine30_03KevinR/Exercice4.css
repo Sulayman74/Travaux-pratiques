@@ -1,0 +1,76 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+  color: coral;
+  font-size: 40px;
+}
+
+.filtres {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 80%;
+  padding: 0 10%;
+}
+
+.filtres > label {
+  font-size: 20px;
+  padding: 1% 10% 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.filtres > label:hover {
+  transform: scale(1.05);
+}
+
+.filtres label {
+  color: blanchedalmond;
+  text-align: center;
+  background-color: royalblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.images *[type="checkbox"] {
+  display: none;
+}
+
+.images {
+  margin: 5% 10%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+#animaux:checked ~ img:not(.animaux) {
+  animation: Disapear 1s linear forwards;
+}
+
+#paysages:checked ~ img:not(.paysages, .paysages.ocean) {
+  animation: Disapear 1s linear forwards;
+  /* display: none; */
+}
+#ocean:checked ~ img:not(.ocean) {
+  animation: Disapear 1s linear forwards;
+  /* display: none; */
+}
+
+@keyframes Disapear {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(0);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

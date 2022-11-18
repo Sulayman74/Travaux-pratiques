@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Righteous&display=swap');
+/* font-family: 'Playfair Display SC', serif;
+font-family: 'Righteous', cursive; */
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: coral;
+}
+
+h1 {
+  text-decoration: underline;
+  font-family: 'Playfair Display SC', serif;
+  text-align: center;
+ }
+
+ .Formes {
+   height: 50vh;
+   width: 100vw;
+   background-color: royalblue;
+   display: flex;
+   justify-content: space-around;
+ }
+
+.Forme {
+  height: 10vh;
+  width: 10vw;
+  border: solid 2px black;
+
+}
+
+.item1 {
+  background-color: violet;
+  align-self: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  transition: all 1s ease-in;
+
+}
+
+.item1:hover{
+  background-color: yellow;
+  transform: scale(2);
+  height: 80px;
+  width: 60px;
+  border-radius: 25%;
+}
+
+.item2 {
+  background-color: pink;
+  align-self: end;
+  transition: all 1s ease-out;
+}
+.item2:hover {
+  width: 20vw;
+  background-color: orange;
+  transform: translate(-10vw);
+
+}
+.item3 {
+  background-color: #65c14a;
+  align-self: baseline;
+  transition: all 0.8s ease-in;
+}
+
+.item3:hover {
+  height: 50vh;
+  background-color: purple;
+  transform: rotate(180deg);
+
+}

@@ -1,0 +1,52 @@
+/* main {
+margin-left: 30px;
+}
+
+
+section {
+color: white;
+font-family: sans-serif, "Arial";
+background-color: #199d1e;
+max-width: 70%;
+padding: 100px 1px 500px;
+
+
+}
+h2 {
+text-align: center;
+font-size: 25px;
+text-transform: uppercase;
+
+}
+h3 {
+text-align: right;
+font-weight: bold;
+font-size: 20px;
+margin: 2%;
+
+}
+
+p {
+
+margin: 2%;
+font-family: Arial, sans-serif;
+font-size: 20px;
+
+} */
+.section_accueil {
+  background-color: green;
+  height: 500px;
+  padding: 10% 40px 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section_accueil h1, .section_accueil h2, .section_accueil h3, .section_accueil p {
+  color: white;
+}
+.section_accueil h2 {
+  text-align: center;
+}
+.section_accueil h3 {
+  text-align: right;
+}

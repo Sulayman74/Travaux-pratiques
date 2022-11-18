@@ -1,0 +1,53 @@
+
+body {
+	background: #2A2B30;
+}
+.feux_de_circulation {
+display: flex;
+align-items: center;
+flex-direction: column;max-width: 980px;
+margin:auto;
+.feux1{
+    justify-self: center;
+    align-self: center;
+}
+
+.feux2{
+    align-self: end;
+}
+
+.feux3{
+    align-self: center;
+}
+.feux4{
+    align-self: start;
+}
+.feux_tricolor {
+	width:40px;
+	height: 130px;
+	background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 5px;
+        &.actif{
+            &.couleur_1  {
+                background-color: crimson;
+            }
+            &.couleur_2  {
+                background-color: orange;
+            }
+            &.couleur_3  {
+                background-color: forestgreen;
+            }
+        }
+     
+    }
+
+}
+}

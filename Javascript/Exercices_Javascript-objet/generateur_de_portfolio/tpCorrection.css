@@ -1,0 +1,36 @@
+.cards {
+    max-width: 980px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.create i {
+    font-size: 42px;
+    transition: all .4s;
+
+}
+.create:hover i {
+    transform: scale(1.4);
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    margin:1.5%;
+    min-height: 400px;
+
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }

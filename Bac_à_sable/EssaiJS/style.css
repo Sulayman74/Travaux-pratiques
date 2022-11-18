@@ -1,0 +1,28 @@
+.container {
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  color: wheat;
+}
+.container #increment-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  box-shadow: 0 3px 5px gray;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.container #increment-btn:hover {
+  background-color: white;
+  color: darkblue;
+  box-shadow: 0 3px 5px blue;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.container #count-el {
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

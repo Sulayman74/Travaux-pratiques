@@ -1,0 +1,23 @@
+.section_presentation {
+  background-color: #8555cb;
+  max-width: 90%;
+}
+.section_presentation img {
+max_width: 80%;
+display: inline-block;
+}
+
+.section_presentation h3 {
+padding: 30px;
+font-size: 25px;
+color: white;
+}
+
+.section_presentation p {
+  display: inline-block;
+  max-width: 60%;
+  vertical-align: top;
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  color: white;
+ }

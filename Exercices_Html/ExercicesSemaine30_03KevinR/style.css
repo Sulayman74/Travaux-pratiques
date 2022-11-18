@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+
+*{
+  margin: 0;
+}
+/* partie du haut */
+header {
+  height: 80vh;
+  width: 100%;
+}
+
+.HautDePage {
+  display: flex;
+  justify-content: center;
+}
+
+.partiGauche {
+  background: linear-gradient(to right, rgba(255, 200, 45, 0.9), rgba(255, 200, 45, 1)),url('assets/lettreO.png') no-repeat top right;
+  overflow: hidden;
+  width: 50%;
+  height: 80vh;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.partiGauche p {
+  margin: 0 0 0 2px;
+}
+
+.petitTitre {
+  padding: 90px 0 20px 50px;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.creative {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  padding-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.DesAgcy {
+  font-size: 45px;
+  font-weight: 700;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.texte {
+  text-transform: none;
+  padding: 10% 20px 10% 50px;
+  line-height: 25px;
+  text-align: justify;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.BtnLM {
+  padding: 10% 50px;
+
+}
+
+.BtnLM input {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 5px 20px;
+  border: 3px solid white;
+}
+
+
+.partiDroite {
+  flex-grow: 1;
+  background-image: url(https://picsum.photos/800/700);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* fin partie du haut */
+
+/* partie du centre */
+
+.Milieu {
+  font-family: 'Comfortaa', cursive;
+  /* background-color: coral; */
+  height: 150vh;
+  width: 100%;
+}
+
+.CentreHautDuSite .PlaceDesIcons i {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 200, 45);
+  height: 5vh;
+  width: 20%;
+  font-size: 4em;
+  padding: 15px 20px;
+
+}
+
+.CentreHautDuSite {
+  height: 75vh;
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 2%;
+
+}
+
+.TexteDuHaut {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+}
+
+.PlaceDesIcons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+h3, h4, h5 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  padding: 20px 0 0 0;
+}
+.Item1, .Item2, .Item3 {
+  flex-flow: nowrap column;
+  margin: 2%;
+  align-items : center;
+  text-align: center;
+  border: 3px solid rgba(226, 218, 209, 0.68);
+  box-sizing: border-box;
+  width: 20%;
+  padding: 2%;
+
+}
+.CentreHautDuSite p {
+  padding: 20px;
+  line-height: 25px;
+}
+
+
+.CentreBasDuSite {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  background-color: rgba(201, 201, 201, 0.25);
+  padding: 2%;
+  margin-top: 2%;
+}
+.CentreBasDuSite h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  padding: 45px 0 20px 0;
+}
+.CentreBasDuSite p {
+  width: 100%;
+  text-align: center;
+}
+
+.PlaceDesImages {
+  height: 40vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.PlaceDesImages a {
+  padding: 1%;
+  margin: 1%;
+}
+
+.Seemore a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+}
+
+/* Bas de page formulaire */
+
+footer {
+  padding-top: 3%;
+  margin-top: 3%;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75vh;
+  width: 100%;
+  background-color: rgb(255, 200, 45);
+}
+
+.PhraseFooter {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.PhraseFooter p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+
+}
+
+.PhraseFooter > p:nth-child(2){
+  color: white;
+  box-sizing: border-box;
+  padding: 5px 0 30px 0;
+}
+
+.PhraseFooter > p:nth-child(3){
+  font-size: 10px ;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  height: 60vh;
+  width: 50%;
+  /* background-color: #008f26; */
+}
+
+form input, textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+}
+
+.BtnEnvoyer {
+  display: flex;
+  flex-direction: column;
+}
+
+#BoutonSend {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 35px;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: end;
+
+}

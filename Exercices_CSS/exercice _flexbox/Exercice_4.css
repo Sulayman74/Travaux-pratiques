@@ -1,0 +1,32 @@
+.container {
+  background-color: green;
+  width: 1000px;
+  height: 1000px;
+
+}
+
+.rond_jaune {
+  background-color: yellow;
+  border-radius: 1000px;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-content: center;
+  overflow: hidden;
+}
+
+.carre_rouge {
+  height: 500px;
+  width: 500px;
+  background-color: red;
+
+
+}
+
+.carre_bleu {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+
+}

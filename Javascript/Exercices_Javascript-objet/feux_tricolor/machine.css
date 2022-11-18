@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  position: relative;
+}
+
+.machinehaut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  height: 10vh;
+  width: 400px;
+}
+.machinehaut .ecran {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  background: darkblue;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+.machinehaut::before {
+  content: "";
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  display: block;
+  position: absolute;
+  background: grey;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.machinehaut::after {
+  content: "";
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  display: block;
+  position: absolute;
+  background: grey;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.machinecentre {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+  height: 50vh;
+  width: 400px;
+  background: whitesmoke;
+  border: 2px solid gray;
+  transition: all 0.5s linear;
+}
+.machinecentre.active {
+  background-color: darkblue;
+  position: absolute;
+}
+.machinecentre::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 55%;
+  border-radius: 50%;
+  border: 30px solid rgb(53, 52, 52);
+}
+
+.mesboutons {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  align-items: flex-start;
+  border-radius: 3px;
+  transition: all 1s linear;
+}
+.mesboutons #onpower {
+  visibility: visible;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  padding: 15px 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+}
+.mesboutons #onpower:hover {
+  transform: scale(1.06);
+  background: black;
+  color: white;
+}
+.mesboutons button {
+  transition: all 0.3s linear;
+  visibility: hidden;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 10px 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+  background: wheat;
+  cursor: pointer;
+  border: 1px solid crimson;
+}
+.mesboutons .active {
+  visibility: visible;
+}
+.mesboutons .active:hover {
+  transform: scale(1.06);
+  background: black;
+  color: white;
+}/*# sourceMappingURL=machine.css.map */

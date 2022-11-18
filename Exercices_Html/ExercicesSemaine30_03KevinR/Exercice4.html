@@ -1,0 +1,78 @@
+<!-- Propriétés à utiliser : cursor + toutes celles qu'on utilise habituellement
+Selecteurs à utiliser : :checked, :not() ,+ et ~
+En utilisant le html suivant, réalisez un portfolio filtrable (portfolio.gif):
+     -->
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Exercice4.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Mon portfolio</h1>
+      <div class="filtres">
+        <label for="animaux">Animaux</label>
+        <label for="paysages">Paysages</label>
+        <label for="ocean">Océan</label>
+      </div>
+      <div class="images">
+        <input type="checkbox" id="animaux" name="animaux" />
+        <input type="checkbox" id="paysages" name="paysages" />
+        <input type="checkbox" id="ocean" name="ocean" />
+        <img
+          class="paysages"
+          src="https://picsum.photos/id/1006/300/200"
+          alt=""
+        />
+        <img class="ocean" src="https://picsum.photos/id/1038/300/200" alt="" />
+        <img
+          class="paysages"
+          src="https://picsum.photos/id/1016/300/200"
+          alt=""
+        />
+        <img class="ocean" src="https://picsum.photos/id/1052/300/200" alt="" />
+        <img class="ocean" src="https://picsum.photos/id/1019/300/200" alt="" />
+        <!-- Exercices 3 : le menu Propriétés à utiliser : cursor, z-index, opacity +
+        toutes celles qu'on utilise habituellement Selecteurs à utiliser :
+        :checked et :nth-child() En utilisant le html suivant, réalisez un menu
+        en utilisant uniquement le css (menu.gif). lt=""> -->
+
+        <img
+          class="animaux"
+          src="https://picsum.photos/id/1003/300/200"
+          alt=""
+        />
+        <img
+          class="paysages"
+          src="https://picsum.photos/id/1037/300/200"
+          alt=""
+        />
+        <img
+          class="animaux"
+          src="https://picsum.photos/id/1024/300/200"
+          alt=""
+        />
+        <img
+          class="animaux"
+          src="https://picsum.photos/id/1020/300/200"
+          alt=""
+        />
+        <img
+          class="animaux"
+          src="https://picsum.photos/id/1025/300/200"
+          alt=""
+        />
+        <img
+          class="paysages ocean"
+          src="https://picsum.photos/id/1015/300/200"
+          alt=""
+        />
+        <img class="ocean" src="https://picsum.photos/id/1041/300/200" alt="" />
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

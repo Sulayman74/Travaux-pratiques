@@ -1,0 +1,104 @@
+
+
+.route {
+  width: 100vw;
+  height: 22vh;
+  border-bottom: 10px dashed black;
+
+}
+
+.voiture {
+  width: 30vw;
+  height: 30vh;
+}
+
+.cockpit {
+  height: 15vh;
+  width: 30vw;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+}
+.arriere {
+  height: 6vh;
+  width: 20vw;
+  /* background-color: red; */
+  background-image: linear-gradient(to top right,red,blue );
+}
+.centre {
+  width: 100vw;
+  height: 13vh;
+  /* background-color: red; */
+  background-image: linear-gradient(to right bottom,blue,70%,red );
+
+}
+
+.avant {
+  height: 6vh;
+  width: 40vw;
+  /* background-color: red; */
+  background-image: linear-gradient(to top right,red,blue );
+}
+
+.roues {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.roues > * {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  border : dashed 3px #e26a55;
+}
+
+@keyframes rouleRaoul {
+
+  0% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+.roues:hover > * {
+/* width: 5vw;
+height: 50px; */
+background-color: black;
+animation: rouleRaoul 0.5s linear infinite;
+}
+
+
+@keyframes AvanceJoLeTaxi {
+
+  0% {
+    transform: translateX(0vw)
+  }
+
+  25% {
+    transform: translateX(30vw)
+  }
+
+  50% {
+    transform: translateX(60vw)
+  }
+
+  75% {
+    transform: translateX(150vw)
+  }
+  100% {
+    transform: translateX(200vw)
+  }
+
+}
+
+.voiture:hover {
+  animation: rouleRaoul;
+  animation: AvanceJoLeTaxi 3s linear infinite 2s;
+
+}

@@ -1,0 +1,47 @@
+body {
+  background: #2A2B30;
+}
+
+.feux_de_circulation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 980px;
+  margin: auto;
+}
+.feux_de_circulation .feux1 {
+  justify-self: center;
+  align-self: center;
+}
+.feux_de_circulation .feux2 {
+  align-self: end;
+}
+.feux_de_circulation .feux3 {
+  align-self: center;
+}
+.feux_de_circulation .feux4 {
+  align-self: start;
+}
+.feux_de_circulation .feux_tricolor {
+  width: 40px;
+  height: 130px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feux_de_circulation .feux_tricolor div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.feux_de_circulation .feux_tricolor div.actif.couleur_1 {
+  background-color: crimson;
+}
+.feux_de_circulation .feux_tricolor div.actif.couleur_2 {
+  background-color: orange;
+}
+.feux_de_circulation .feux_tricolor div.actif.couleur_3 {
+  background-color: forestgreen;
+}/*# sourceMappingURL=style.css.map */

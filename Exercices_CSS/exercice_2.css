@@ -1,0 +1,8 @@
+
+
+.item1, .item2, .item3, .item4 {
+  height: 200px;
+  width: 100px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}

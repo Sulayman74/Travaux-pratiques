@@ -1,0 +1,51 @@
+body {
+  background: #2A2B30;
+}
+
+.parking {
+  display: flex;
+  flex-wrap: wrap;
+}
+.parking .voiture {
+  display: flex;
+  margin-right: 10px;
+  height: 100px;
+  width: 300px;
+  position: relative;
+  align-items: flex-end;
+}
+.parking .voiture .element {
+  background-color: red;
+}
+.parking .voiture .element:first-child {
+  width: 20%;
+  height: 50%;
+}
+.parking .voiture .element:nth-child(2) {
+  width: 60%;
+  height: 100%;
+}
+.parking .voiture .element:last-child {
+  width: 20%;
+  height: 50%;
+}
+.parking .voiture:after {
+  width: 40px;
+  height: 40px;
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 20%;
+  bottom: -20px;
+  border-radius: 50%;
+}
+.parking .voiture:before {
+  width: 40px;
+  height: 40px;
+  content: "";
+  background-color: black;
+  position: absolute;
+  right: 20%;
+  bottom: -20px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
